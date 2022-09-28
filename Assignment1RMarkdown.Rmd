@@ -1,0 +1,27 @@
+---
+title: "Assignment1RMarkdown"
+author: "Naman Agarwal"
+date: "2022-09-28"
+output: html_document
+---
+
+# Wave Plot
+
+```{r}
+x <- seq(0, 20, 0.01)
+y <- c()
+
+for (i in 1:length(x))
+{
+    y[i] <- sin(x[i])
+}
+sin_df <- data.frame(x, y)
+
+head(sin_df,3)
+```
+```{r}
+plot(sin_df)
+```
+$$
+sin^2(x) + cos^2(x) = 1
+$$
